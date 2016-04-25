@@ -3,6 +3,6 @@ class Card {
     char suit, val;
     char[];
   public:
-    getsuit(){return suit;};
-    getval(){return val;};
+    char getsuit(){return suit;};
+    char getval(){return val;};
 };
