@@ -1,15 +1,23 @@
-# setup
+#include "setup.h"
+#include <vector>
+#include <algorithm>
+#include <stack>
+using namespace std;
 
-vector<Cards>deck{
+stack<int, vector<Card>> myvect;
+stack<myvect>deck{
   for(int i=2, i<=14, i++){
-    {'H',i};
+    myvect.push({'H',i});
   }
   for(i=2, i<=14, i++){
-    {'D',i};
+    myvect.push({'D',i});
   }
   for(i=2, i<=14, i++){
-    {'S',i};
+    mmyvect.push({'S',i});
   }
   for(i=2, i<=14, i++){
-    {'C',i};
+    myvect.push({'C',i});
   }
+  }
+
+random_suffle(myvect.begin(), myvect.end());
