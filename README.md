@@ -1,22 +1,22 @@
 #include "setup.h"
 
-stack<int, vector<Card>> myvect;
-stack<myvect>deck{
+vector<Card> myvect
+{
   for(int i=2, i<=14, i++){
-    myvect.push({'H',i});
+    myvect.push_back({'H',i});
   }
   for(i=2, i<=14, i++){
-    myvect.push({'D',i});
+    myvect.push_back({'D',i});
   }
   for(i=2, i<=14, i++){
-    mmyvect.push({'S',i});
+    mmyvect.push_back({'S',i});
   }
   for(i=2, i<=14, i++){
-    myvect.push({'C',i});
+    myvect.push_back({'C',i});
   }
   }
-
-random_suffle(myvect.begin(), myvect.end());
+stack<myvect> deck;
+random_suffle(deck.begin(), deck.end());
 
 
 //Card Faces (J, Q, K, A)
