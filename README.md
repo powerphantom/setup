@@ -1,8 +1,4 @@
 #include "setup.h"
-#include <vector>
-#include <algorithm>
-#include <stack>
-using namespace std;
 
 stack<int, vector<Card>> myvect;
 stack<myvect>deck{
