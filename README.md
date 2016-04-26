@@ -1,6 +1,7 @@
 #include "setup.h"
 
-vector<Card> myvect
+void setup::vect_intail(){
+vector<setup> myvect
 {
   for(int i=2, i<=14, i++){
     myvect.push_back({'H',i});
@@ -15,6 +16,7 @@ vector<Card> myvect
     myvect.push_back({'C',i});
   }
   }
+ }
 stack<myvect> deck;
 random_suffle(deck.begin(), deck.end());
 
