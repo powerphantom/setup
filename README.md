@@ -1,30 +1,41 @@
 #include "setup.h"
 
-void setup::vect_intail(){
-vector<setup> myvect
-{
-  for(int i=2, i<=14, i++){
-    myvect.push_back({'H',i});
+setup get_card(char mychar, int myint){
+	setup my_setup;
+	my_setup.suit=mychar;
+	my_setup.val=myint;
+	return my_setup;
+}
+
+void vect_intail(vector<setup>& myvect){
+	int i;
+
+  for(i=2; i<=14; i++){
+    myvect.push_back(get_card('H', i));
   }
-  for(i=2, i<=14, i++){
-    myvect.push_back({'D',i});
+  for(i=2; i<=14; i++){
+    myvect.push_back(get_card('D', i));
   }
-  for(i=2, i<=14, i++){
-    mmyvect.push_back({'S',i});
+  for(i=2; i<=14; i++){
+    myvect.push_back(get_card('S', i));
   }
-  for(i=2, i<=14, i++){
-    myvect.push_back({'C',i});
-  }
+  for(i=2; i<=14; i++){
+    myvect.push_back(get_card('C', i));
   }
  }
-stack<myvect> deck;
-random_suffle(deck.begin(), deck.end());
+ 
+ void shuffle_deck(vector<setup>& myvec ,stack<setup>& mystack)
+{
+	int i;
+std::random_shuffle(myvec.begin(), myvec.end());
 
 
-//Card Faces (J, Q, K, A)
+	for(i=0; i!=myvec.size(); i++){
+	mystack.push(myvec[i]);
+	}
 
-void /*ClassName*/: faceCard(int cardVal){
-	char cardFace;
+
+}
 
 	switch (cardVal) {
 
