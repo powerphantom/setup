@@ -8,6 +8,7 @@
 #include <ctime>
 #include <cstdlib>
 #include <random>
+#include <utility>
 
 using namespace std;
 
@@ -18,8 +19,11 @@ struct setup {
 };
 setup get_card(char mychar, int myint);
 void vect_intail(vector<setup>& myvect);
-void shuffle_deck(vector<setup>& myvec ,stack<vector<setup>>& mystack);
-void Deal(stack<vector<setup>>& deck, vector<setup>& hand);
+void shuffle_deck(vector<setup>& myvec ,stack<setup>& mystack);
+void Deal(stack<setup>& deck, vector<setup>& hand);
+void Sequence_Hand(vector<setup>& hand, vector<setup>& stock);
+void Ask_squence(vector<setup>& hand, vector<setup>& stock);
+void Sequence_Stock(vector<setup>& hand, vector<setup>& stock);
 
 #endif
 
