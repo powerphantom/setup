@@ -33,6 +33,9 @@ std::random_shuffle(myvec.begin(), myvec.end());
 	for(i=0; i!=myvec.size(); i++){
 	mystack.push(myvec[i]);
 	}
+	
+
+}
 
 
 }
