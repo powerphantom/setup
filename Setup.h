@@ -29,5 +29,6 @@ void Discard(vector<setup>& hand, vector<setup>& discard);
 void Com_Draw(stack<setup>& deck, vector<setup>& com_hand);
 void Com_Discard(vector<setup>& discard, vector<setup>& com_hand);
 void Com_Sequence(vector<setup>& stock, vector<setup>& com_hand);
+void Output(int cardVal);
 
 #endif
