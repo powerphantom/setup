@@ -37,9 +37,6 @@ std::random_shuffle(myvec.begin(), myvec.end());
 
 }
 
-
-}
-
 	switch (cardVal) {
 
 		case 11:
