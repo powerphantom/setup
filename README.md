@@ -1,5 +1,41 @@
 #include "setup.h"
 
+void Output(int cardVal){
+
+	char cardFace = ' ';
+
+	if (cardVal <= 10) {
+
+		cout << cardVal;
+	} else if (cardVal > 10) {
+
+		switch (cardVal) {
+
+			case 11:
+				cardFace = 'J';
+			break;
+
+			case 12:
+				cardFace = 'Q';
+			break;
+	
+			case 13:
+				cardFace = 'K';
+			break;
+
+			case 14:
+				cardFace = 'A';
+			break;
+
+			default:
+				cardFace = '';
+			break;
+
+		}
+		cout << cardFace;
+	}	
+}
+
 setup get_card(char mychar, int myint){
 	setup my_setup;
 	my_setup.suit=mychar;
@@ -35,29 +71,4 @@ std::random_shuffle(myvec.begin(), myvec.end());
 	}
 	
 
-}
-
-	switch (cardVal) {
-
-		case 11:
-			cardFace = 'J';
-		break;
-
-		case 12:
-			cardFace = 'Q';
-		break;
-
-		case 13:
-			cardFace = 'K';
-		break;
-
-		case 14:
-			cardFace = 'A';
-		break;
-
-		default:
-			cardFace = '';
-		break;
-
-	}
 }
