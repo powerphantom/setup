@@ -30,5 +30,6 @@ void Com_Draw(stack<setup>& deck, vector<setup>& com_hand);
 void Com_Discard(vector<setup>& discard, vector<setup>& com_hand);
 void Com_Sequence(vector<setup>& stock, vector<setup>& com_hand);
 void Output(int cardVal);
+bool Win(vector<setup>& hand);
 
 #endif
