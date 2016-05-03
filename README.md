@@ -72,3 +72,11 @@ std::random_shuffle(myvec.begin(), myvec.end());
 	
 
 }
+
+bool Win(vector<setup>& hand){ 
+//win condition, run at the end of every turn 
+if (hand.length() == 0) 
+	return true; 
+else 
+	return false; 
+}
